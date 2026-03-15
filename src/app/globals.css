@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* Design Tokens - Based on previous styles */
+    --color-gold: #B89E67;
+    --color-text-primary: #1A1A1A;
+    --color-text-secondary: #4A4A4A;
+    --color-bg: #FDFDFB;
+    --color-ph-light: #F4F4F2;
+    --color-ph-mid: #E8E8E6;
+    
+    --spacing-xs: 0.75rem;
+    --spacing-sm: 1.5rem;
+    --spacing-md: 2.5rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+    
+    --transition-fast: 0.3s ease;
+    --transition-slow: 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+    
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+}
+
+@layer components {
+    .luxury-frame {
+        @apply bg-white border border-[#B89E67]/20 shadow-[0_10px_30px_rgba(0,0,0,0.05),inset_0_0_0_1px_rgba(184,158,103,0.1)] p-3 relative transition-all duration-300;
+    }
+    
+    .luxury-frame::before {
+        content: '';
+        @apply absolute top-[6px] left-[6px] right-[6px] bottom-[6px] border-[0.5px] border-[#B89E67]/15 pointer-events-none z-[2];
+    }
+}
