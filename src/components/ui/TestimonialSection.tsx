@@ -37,18 +37,18 @@ function TestimonialCard({ quote, author, image }: TestimonialCardProps) {
 export function TestimonialSection() {
   const testimonials = [
     {
-      quote: "O vestido ficou perfeito, o caimento impecável. Foi a escolha certa para ser madrinha. Muito obrigada pelo atendimento incrível!",
-      author: "Juliana S., Casamento",
+      quote: "O vestido dos meus sonhos! O decote nas costas e cada detalhe da renda foram elogiados por todos. O atendimento da Dona Margarida fez toda a diferença para o meu grande dia ser perfeito.",
+      author: "Juliana S., Noiva",
       image: "/images/cliente1.png"
     },
     {
-      quote: "Resolvi tudo em um só lugar. O traje estava impecável e o ajuste da calça ficou na medida exata.",
-      author: "Rafael M., Formatura",
+      quote: "Fiquei encantada com a modernidade e o movimento desse vestido azul. É difícil encontrar peças tão exclusivas e com um caimento tão impecável. Me senti maravilhosa!",
+      author: "Beatriz L., Madrinha",
       image: "/images/cliente2.png"
     },
     {
-      quote: "Achei o vestido dos meus sonhos. O bordado era delicadíssimo e recebi elogios a noite toda!",
-      author: "Camila T., Casamento",
+      quote: "A delicadeza do bordado e o brilho sutil do tecido me conquistaram à primeira vista. Foi o traje perfeito para celebrar esse momento tão especial com elegância e conforto.",
+      author: "Renata P., Casamento",
       image: "/images/cliente3.png"
     }
   ];
