@@ -30,8 +30,18 @@ export default function AvaliarPage() {
 
             <hr className="border-t border-gold/30 w-32 mx-auto" />
 
+            {/* Visual Nudge (5 Stars) */}
+            <div className="flex justify-center gap-2 py-2">
+              {[1, 2, 3, 4, 5].map((star) => (
+                <div key={star} className="relative group/star">
+                  <div className="absolute inset-0 bg-gold blur-md opacity-40 group-hover/star:opacity-80 transition-opacity duration-300 rounded-full" />
+                  <Star className="relative w-8 h-8 md:w-10 md:h-10 text-gold drop-shadow-[0_0_10px_rgba(212,175,55,0.6)]" fill="currentColor" />
+                </div>
+              ))}
+            </div>
+
             {/* Instruction List */}
-            <div className="space-y-8 text-left max-w-lg mx-auto py-8">
+            <div className="space-y-8 text-left max-w-lg mx-auto py-4">
               <div className="flex items-center gap-6 group">
                 <div className="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center shrink-0 group-hover:bg-gold/30 transition-colors duration-300">
                   <MousePointerClick className="w-5 h-5 text-gold" strokeWidth={1.5} />
@@ -46,7 +56,7 @@ export default function AvaliarPage() {
                   <Star className="w-5 h-5 text-gold" strokeWidth={1.5} fill="currentColor" />
                 </div>
                 <p className="font-sans text-white text-base md:text-lg font-light">
-                  Selecione as 5 estrelas.
+                  ✅ Toque na 5ª estrela dourada (Sua nota máxima faz toda a diferença!).
                 </p>
               </div>
 
@@ -61,9 +71,9 @@ export default function AvaliarPage() {
             </div>
 
             {/* CTA */}
-            <div className="pt-10">
+            <div className="pt-8">
               <Link 
-                href="https://g.page/r/CcVVeeokEPU0EBM/review"
+                href="https://search.google.com/local/writereview?placeid=ChIJ3W-x_saJt5QRxVV56iQQ9TQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-12 py-6 bg-gold text-primary text-[0.8rem] uppercase tracking-[5px] font-bold hover:bg-white hover:text-primary transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:-translate-y-1 w-full md:w-auto"
