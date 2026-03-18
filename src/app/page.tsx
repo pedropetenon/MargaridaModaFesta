@@ -17,16 +17,16 @@ export default function Home() {
       <Hero />
       
       {/* Moda Feminina Section */}
-      <section id="moda-feminina" className="py-24">
-        <div className="container mx-auto px-4">
+      <section id="moda-feminina" className="py-16 md:py-24">
+        <div className="container mx-auto px-4 md:px-8">
           <Reveal delay={0.1}>
-            <div className="text-center mb-16">
-              <h2 className="font-serif text-4xl md:text-5xl text-primary mb-4">Moda Feminina</h2>
-              <p className="font-sans text-secondary uppercase tracking-[3px] text-xs">Vestidos de Festa Exclusivos</p>
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl text-primary mb-3 md:mb-4">Moda Feminina</h2>
+              <p className="font-sans text-secondary uppercase tracking-[2px] md:tracking-[3px] text-[10px] md:text-xs">Vestidos de Festa Exclusivos</p>
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-12 max-w-6xl mx-auto">
             <Reveal delay={0.2} y={50}>
               <ProductCard 
                 name="Vestido Esmeralda Longo Plissado"
@@ -54,16 +54,16 @@ export default function Home() {
       </section>
 
       {/* Trajes Masculinos Section */}
-      <section id="trajes-masculinos" className="py-24 bg-white/50 border-y border-ph-light">
-        <div className="container mx-auto px-4">
+      <section id="trajes-masculinos" className="py-16 md:py-24 bg-white/50 border-y border-ph-light">
+        <div className="container mx-auto px-4 md:px-8">
           <Reveal>
-            <div className="text-center mb-16">
-              <h2 className="font-serif text-4xl md:text-5xl text-primary mb-4">Trajes Masculinos</h2>
-              <p className="font-sans text-secondary uppercase tracking-[3px] text-xs">Exclusividade e Praticidade</p>
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl text-primary mb-3 md:mb-4">Trajes Masculinos</h2>
+              <p className="font-sans text-secondary uppercase tracking-[2px] md:tracking-[3px] text-[10px] md:text-xs">Exclusividade e Praticidade</p>
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-12 max-w-6xl mx-auto">
             <Reveal delay={0.2} y={50}>
               <ProductCard 
                 name="Terno Slim Azul Marinho"
