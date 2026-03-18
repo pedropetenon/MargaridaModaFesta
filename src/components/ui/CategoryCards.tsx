@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface CategoryCardProps {
   title: string;
@@ -18,9 +19,15 @@ function CategoryCard({ title, image, href, className }: CategoryCardProps) {
         <motion.div 
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.8, ease: [0.19, 1, 0.22, 1] }}
-          className="w-full h-full bg-cover bg-center transition-transform duration-700"
-          style={{ backgroundImage: `url('${image}')` }}
+          className="relative w-full h-full"
         >
+          <Image 
+            src={image} 
+            alt={title} 
+            fill 
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover"
+          />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/15 group-hover:bg-black/40 transition-colors duration-500" />
         </motion.div>

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Hero() {
   return (
@@ -13,11 +14,13 @@ export function Hero() {
         transition={{ duration: 2, ease: [0.19, 1, 0.22, 1] }}
         className="absolute inset-0 z-0"
       >
-        <div 
-          className="w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-bg.png')" }}
-          role="img"
-          aria-label="Margarida Moda Festa Storefront"
+        <Image 
+          src="/images/hero-bg.png" 
+          alt="Margarida Moda Festa Storefront" 
+          fill 
+          priority 
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60" />
       </motion.div>

@@ -28,9 +28,16 @@ export function ProductCard({ name, image, whatsappLink, badge, aspectRatio = "p
            <motion.div
              whileHover={{ scale: 1.04 }}
              transition={{ duration: 0.6 }}
-             className="w-full h-full bg-cover bg-center"
-             style={{ backgroundImage: `url('${image}')` }}
-           />
+             className="relative w-full h-full"
+           >
+             <Image 
+               src={image} 
+               alt={name || "Traje Margarida Moda Festa"} 
+               fill 
+               sizes="(max-width: 768px) 85vw, 33vw"
+               className="object-cover"
+             />
+           </motion.div>
         </div>
         
         {badge && (

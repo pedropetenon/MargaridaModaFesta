@@ -37,7 +37,7 @@ html, body {
 
 @layer components {
     .luxury-frame {
-        @apply bg-white border border-[#B89E67]/20 shadow-[0_10px_30px_rgba(0,0,0,0.05),inset_0_0_0_1px_rgba(184,158,103,0.1)] p-3 relative transition-all duration-300;
+        @apply bg-white border border-[#B89E67]/20 shadow-[0_10px_30px_rgba(0,0,0,0.05),inset_0_0_0_1px_rgba(184,158,103,0.1)] p-3 relative transition-transform duration-300;
     }
     
     .luxury-frame::before {

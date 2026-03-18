@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Reveal } from '@/components/animations/Reveal';
 
 export function StorySection() {
@@ -13,13 +14,14 @@ export function StorySection() {
           <Reveal x={-50} duration={1.2}>
             <div className="relative">
             <div className="luxury-frame aspect-[1/1.2] shadow-2xl">
-               <div className="absolute inset-[15px] overflow-hidden">
-                  <div 
-                    className="w-full h-full bg-cover bg-center"
-                    style={{ backgroundImage: "url('/images/dona-margarida.jpg')" }}
-                    role="img"
-                    aria-label="Dona Margarida na boutique"
-                  />
+               <div className="absolute inset-[15px] overflow-hidden relative">
+                 <Image 
+                   src="/images/dona-margarida.jpg" 
+                   alt="Dona Margarida na boutique" 
+                   fill 
+                   sizes="(max-width: 768px) 100vw, 50vw"
+                   className="object-cover"
+                 />
                </div>
             </div>
             
