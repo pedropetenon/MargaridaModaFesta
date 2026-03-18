@@ -14,7 +14,7 @@ export function StorySection() {
           <Reveal x={-50} duration={1.2}>
             <div className="relative">
             <div className="luxury-frame aspect-[1/1.2] shadow-2xl">
-               <div className="absolute inset-[15px] overflow-hidden relative">
+               <div className="absolute inset-[15px] overflow-hidden">
                  <Image 
                    src="/images/dona-margarida.jpg" 
                    alt="Dona Margarida na boutique" 
