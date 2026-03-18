@@ -26,28 +26,36 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-12 max-w-6xl mx-auto">
-            <Reveal delay={0.2} y={50}>
-              <ProductCard 
-                name="Vestido Esmeralda Longo Plissado"
-                image="/images/vestido_esmeralda_1773431372196.png"
-                whatsappLink="https://wa.me/5516991062118?text=Olá, gostaria de verificar a disponibilidade do Vestido Esmeralda."
-              />
-            </Reveal>
-            <Reveal delay={0.3} y={50}>
-              <ProductCard 
-                name="Vestido Sereia Vinho Fenda Lateral"
-                image="/images/vestido_vinho_1773431402801.png"
-                whatsappLink="https://wa.me/5516991062118?text=Olá, gostaria de verificar a disponibilidade do Vestido Vinho."
-              />
-            </Reveal>
-            <Reveal delay={0.4} y={50}>
-              <ProductCard 
-                name="Vestido Terracota Fluido"
-                image="/images/vestido_terracota_1773431416939.png"
-                whatsappLink="https://wa.me/5516991062118?text=Olá, gostaria de verificar a disponibilidade do Vestido Terracota."
-              />
-            </Reveal>
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 w-[calc(100%+2rem)] -ml-4 px-4 md:w-full md:ml-0 md:px-0 md:grid md:grid-cols-3 md:gap-12 md:overflow-visible no-scrollbar">
+            <div className="w-[82vw] sm:w-[45vw] snap-center shrink-0 md:w-auto h-full">
+              <Reveal delay={0.2} y={50} className="h-full">
+                <ProductCard 
+                  name="Vestido Esmeralda Longo Plissado"
+                  image="/images/vestido_esmeralda_1773431372196.png"
+                  whatsappLink="https://wa.me/5516991062118?text=Olá, gostaria de verificar a disponibilidade do Vestido Esmeralda."
+                />
+              </Reveal>
+            </div>
+            
+            <div className="w-[82vw] sm:w-[45vw] snap-center shrink-0 md:w-auto h-full">
+              <Reveal delay={0.3} y={50} className="h-full">
+                <ProductCard 
+                  name="Vestido Sereia Vinho Fenda Lateral"
+                  image="/images/vestido_vinho_1773431402801.png"
+                  whatsappLink="https://wa.me/5516991062118?text=Olá, gostaria de verificar a disponibilidade do Vestido Vinho."
+                />
+              </Reveal>
+            </div>
+            
+            <div className="w-[82vw] sm:w-[45vw] snap-center shrink-0 md:w-auto h-full mr-4 md:mr-0">
+              <Reveal delay={0.4} y={50} className="h-full">
+                <ProductCard 
+                  name="Vestido Terracota Fluido"
+                  image="/images/vestido_terracota_1773431416939.png"
+                  whatsappLink="https://wa.me/5516991062118?text=Olá, gostaria de verificar a disponibilidade do Vestido Terracota."
+                />
+              </Reveal>
+            </div>
           </div>
 
         </div>
@@ -63,29 +71,37 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-12 max-w-6xl mx-auto">
-            <Reveal delay={0.2} y={50}>
-              <ProductCard 
-                name="Terno Slim Azul Marinho"
-                image="/images/terno_azul_marinho_1773431430652.png"
-                whatsappLink="https://wa.me/5516991062118?text=Olá, gostaria de verificar a disponibilidade do Terno Azul Marinho."
-              />
-            </Reveal>
-            <Reveal delay={0.3} y={50}>
-              <ProductCard 
-                name="Terno Clássico Cinza Chumbo"
-                image="/images/terno_cinza_chumbo_final.png"
-                whatsappLink="https://wa.me/5516991062118?text=Olá, gostaria de verificar a disponibilidade do Terno Cinza Chumbo."
-              />
-            </Reveal>
-            <Reveal delay={0.4} y={50}>
-              <ProductCard 
-                name="Smoking Preto Tradicional"
-                image="/images/smoking_preto_1773431485725.png"
-                whatsappLink="https://wa.me/5516991062118?text=Olá, gostaria de verificar a disponibilidade do Smoking Preto."
-                badge="Linha Premium"
-              />
-            </Reveal>
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 w-[calc(100%+2rem)] -ml-4 px-4 md:w-full md:ml-0 md:px-0 md:grid md:grid-cols-3 md:gap-12 md:overflow-visible no-scrollbar">
+            <div className="w-[82vw] sm:w-[45vw] snap-center shrink-0 md:w-auto h-full">
+              <Reveal delay={0.2} y={50} className="h-full">
+                <ProductCard 
+                  name="Terno Slim Azul Marinho"
+                  image="/images/terno_azul_marinho_1773431430652.png"
+                  whatsappLink="https://wa.me/5516991062118?text=Olá, gostaria de verificar a disponibilidade do Terno Azul Marinho."
+                />
+              </Reveal>
+            </div>
+            
+            <div className="w-[82vw] sm:w-[45vw] snap-center shrink-0 md:w-auto h-full">
+              <Reveal delay={0.3} y={50} className="h-full">
+                <ProductCard 
+                  name="Terno Clássico Cinza Chumbo"
+                  image="/images/terno_cinza_chumbo_final.png"
+                  whatsappLink="https://wa.me/5516991062118?text=Olá, gostaria de verificar a disponibilidade do Terno Cinza Chumbo."
+                />
+              </Reveal>
+            </div>
+            
+            <div className="w-[82vw] sm:w-[45vw] snap-center shrink-0 md:w-auto h-full mr-4 md:mr-0">
+              <Reveal delay={0.4} y={50} className="h-full">
+                <ProductCard 
+                  name="Smoking Preto Tradicional"
+                  image="/images/smoking_preto_1773431485725.png"
+                  whatsappLink="https://wa.me/5516991062118?text=Olá, gostaria de verificar a disponibilidade do Smoking Preto."
+                  badge="Linha Premium"
+                />
+              </Reveal>
+            </div>
           </div>
         </div>
       </section>

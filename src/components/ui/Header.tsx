@@ -110,28 +110,34 @@ export function Header() {
         </div>
 
         {/* Mobile Nav Links */}
-        <nav className="flex flex-col items-center justify-center flex-1 gap-10 px-6">
-          <Link href="#moda-feminina" className="font-sans text-xl tracking-[4px] uppercase text-primary hover:text-gold transition-colors" onClick={toggleMobileMenu}>
-            Moda Feminina
+        <nav className="flex flex-col items-center justify-start flex-1 px-8 pt-8 w-full overflow-y-auto">
+          <Link href="#moda-feminina" className="w-full flex items-center justify-between py-6 border-b border-gold/20 font-sans text-lg tracking-[3px] uppercase text-primary hover:text-gold active:bg-gold/5 transition-all" onClick={toggleMobileMenu}>
+            <span>Moda Feminina</span>
+            <span className="text-gold/50 text-2xl">›</span>
           </Link>
-          <Link href="#trajes-masculinos" className="font-sans text-xl tracking-[4px] uppercase text-primary hover:text-gold transition-colors" onClick={toggleMobileMenu}>
-            Masculino
+          <Link href="#trajes-masculinos" className="w-full flex items-center justify-between py-6 border-b border-gold/20 font-sans text-lg tracking-[3px] uppercase text-primary hover:text-gold active:bg-gold/5 transition-all" onClick={toggleMobileMenu}>
+            <span>Trajes Masculinos</span>
+            <span className="text-gold/50 text-2xl">›</span>
           </Link>
-          <Link href="#nossa-historia" className="font-sans text-xl tracking-[4px] uppercase text-primary hover:text-gold transition-colors" onClick={toggleMobileMenu}>
-            Nossa História
+          <Link href="#nossa-historia" className="w-full flex items-center justify-between py-6 border-b border-gold/20 font-sans text-lg tracking-[3px] uppercase text-primary hover:text-gold active:bg-gold/5 transition-all" onClick={toggleMobileMenu}>
+            <span>Nossa História</span>
+            <span className="text-gold/50 text-2xl">›</span>
           </Link>
-          <Link href="#prova-social" className="font-sans text-xl tracking-[4px] uppercase text-primary hover:text-gold transition-colors" onClick={toggleMobileMenu}>
-            Depoimentos
+          <Link href="#prova-social" className="w-full flex items-center justify-between py-6 border-b border-gold/10 font-sans text-lg tracking-[3px] uppercase text-primary hover:text-gold active:bg-gold/5 transition-all" onClick={toggleMobileMenu}>
+            <span>Depoimentos</span>
+            <span className="text-gold/50 text-2xl">›</span>
           </Link>
           
-          <Link 
-            href="https://wa.me/5516991062118?text=Olá, gostaria de agendar um horário na Margarida Moda Festa!" 
-            className="mt-8 bg-primary text-white text-sm uppercase tracking-[3px] font-medium w-full max-w-xs flex items-center justify-center min-h-[56px] rounded-full"
-            target="_blank"
-            onClick={toggleMobileMenu}
-          >
-            Agendar Horário
-          </Link>
+          <div className="w-full mt-10 pb-10">
+            <Link 
+              href="https://wa.me/5516991062118?text=Olá, gostaria de agendar um horário na Margarida Moda Festa!" 
+              className="bg-primary text-white text-sm uppercase tracking-[3px] font-medium w-full flex items-center justify-center min-h-[56px] rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.15)] active:scale-95 transition-transform"
+              target="_blank"
+              onClick={toggleMobileMenu}
+            >
+              Agendar Horário
+            </Link>
+          </div>
         </nav>
       </div>
     </>
