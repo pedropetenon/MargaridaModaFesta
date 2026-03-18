@@ -22,12 +22,13 @@ export default function Home() {
           <Reveal delay={0.1}>
             <div className="text-center mb-10 md:mb-16">
               <h2 className="font-serif text-3xl md:text-5xl text-primary mb-3 md:mb-4">Moda Feminina</h2>
-              <p className="font-sans text-secondary uppercase tracking-[2px] md:tracking-[3px] text-[10px] md:text-xs">Vestidos de Festa Exclusivos</p>
+              <p className="font-sans text-secondary uppercase tracking-[2px] md:tracking-[3px] text-[10px] md:text-xs block md:inline">Vestidos de Festa Exclusivos</p>
+              <span className="font-sans text-gold/60 text-[10px] italic block mt-1 md:hidden">(Deslize para ver mais)</span>
             </div>
           </Reveal>
 
-          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 w-[calc(100%+2rem)] -ml-4 px-4 md:w-full md:ml-0 md:px-0 md:grid md:grid-cols-3 md:gap-12 md:overflow-visible no-scrollbar">
-            <div className="w-[82vw] sm:w-[45vw] snap-center shrink-0 md:w-auto h-full">
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 w-full md:grid md:grid-cols-3 md:gap-12 md:overflow-visible no-scrollbar">
+            <div className="w-[85%] sm:w-[48%] snap-center shrink-0 md:w-auto h-full">
               <Reveal delay={0.2} y={50} className="h-full">
                 <ProductCard 
                   name="Vestido Esmeralda Longo Plissado"
@@ -37,7 +38,7 @@ export default function Home() {
               </Reveal>
             </div>
             
-            <div className="w-[82vw] sm:w-[45vw] snap-center shrink-0 md:w-auto h-full">
+            <div className="w-[85%] sm:w-[48%] snap-center shrink-0 md:w-auto h-full">
               <Reveal delay={0.3} y={50} className="h-full">
                 <ProductCard 
                   name="Vestido Sereia Vinho Fenda Lateral"
@@ -47,7 +48,7 @@ export default function Home() {
               </Reveal>
             </div>
             
-            <div className="w-[82vw] sm:w-[45vw] snap-center shrink-0 md:w-auto h-full mr-4 md:mr-0">
+            <div className="w-[85%] sm:w-[48%] snap-center shrink-0 md:w-auto h-full">
               <Reveal delay={0.4} y={50} className="h-full">
                 <ProductCard 
                   name="Vestido Terracota Fluido"
@@ -67,12 +68,13 @@ export default function Home() {
           <Reveal>
             <div className="text-center mb-10 md:mb-16">
               <h2 className="font-serif text-3xl md:text-5xl text-primary mb-3 md:mb-4">Trajes Masculinos</h2>
-              <p className="font-sans text-secondary uppercase tracking-[2px] md:tracking-[3px] text-[10px] md:text-xs">Exclusividade e Praticidade</p>
+              <p className="font-sans text-secondary uppercase tracking-[2px] md:tracking-[3px] text-[10px] md:text-xs block md:inline">Exclusividade e Praticidade</p>
+              <span className="font-sans text-gold/60 text-[10px] italic block mt-1 md:hidden">(Deslize para ver mais)</span>
             </div>
           </Reveal>
 
-          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 w-[calc(100%+2rem)] -ml-4 px-4 md:w-full md:ml-0 md:px-0 md:grid md:grid-cols-3 md:gap-12 md:overflow-visible no-scrollbar">
-            <div className="w-[82vw] sm:w-[45vw] snap-center shrink-0 md:w-auto h-full">
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 w-full md:grid md:grid-cols-3 md:gap-12 md:overflow-visible no-scrollbar">
+            <div className="w-[85%] sm:w-[48%] snap-center shrink-0 md:w-auto h-full">
               <Reveal delay={0.2} y={50} className="h-full">
                 <ProductCard 
                   name="Terno Slim Azul Marinho"
@@ -82,7 +84,7 @@ export default function Home() {
               </Reveal>
             </div>
             
-            <div className="w-[82vw] sm:w-[45vw] snap-center shrink-0 md:w-auto h-full">
+            <div className="w-[85%] sm:w-[48%] snap-center shrink-0 md:w-auto h-full">
               <Reveal delay={0.3} y={50} className="h-full">
                 <ProductCard 
                   name="Terno Clássico Cinza Chumbo"
@@ -92,7 +94,7 @@ export default function Home() {
               </Reveal>
             </div>
             
-            <div className="w-[82vw] sm:w-[45vw] snap-center shrink-0 md:w-auto h-full mr-4 md:mr-0">
+            <div className="w-[85%] sm:w-[48%] snap-center shrink-0 md:w-auto h-full">
               <Reveal delay={0.4} y={50} className="h-full">
                 <ProductCard 
                   name="Smoking Preto Tradicional"
